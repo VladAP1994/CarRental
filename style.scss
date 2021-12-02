@@ -1,0 +1,45 @@
+@import "vars";
+@import "mixins";
+
+body {
+    @include body;
+}
+
+.top{
+    @include top;
+}
+.fas{
+    color: rgb(12, 175, 216);
+    font-size: 10px;
+    margin-right: 20px;
+}
+.iconTxt{
+    color:rgba(255, 255, 255, 0.856);
+    font-family:sans-serif;
+    font-weight:500;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+    margin-left: 8px;
+    -webkit-font-smoothing: always;
+}
+.topElements{
+    @include topElements;
+}
+.nav{
+    @include nav;
+}
+
+#logoCar{
+    width: 150px;
+}
+.logo{
+    width: 150px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    margin-left: 300px;
+}
+.navButtons{
+    @include navButtons;
+}
