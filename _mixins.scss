@@ -9,6 +9,7 @@
     background-attachment: fixed;
     width: auto;
     overflow-x: hidden;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 
@@ -19,23 +20,68 @@
     background-color: black;
     top: 0px;
     z-index: 1;
-    
+    justify-content: center;
+    align-items: center;
+    display:flex;    
+}
+@mixin fas{
+    color: rgb(12, 175, 216);
+    font-size: 10px;
+    padding: 0 50px 0 50px;
+}
+
+@mixin iconTxt{
+    color:rgba(255, 255, 255, 0.856);
+    font-family:sans-serif;
+    font-weight:500;
+    letter-spacing: 1.5px;
+    font-size: 11px;
+    margin-left: 8px;
+    -webkit-font-smoothing: always;
 }
 
 @mixin topElements{
-    width: 960px;
+    width: 900px;
     line-height: 46px;
-    margin-left: 300px;
 }
 
 @mixin nav{
     width: 100%;
-    height: 80px;
+    height: 60px;
     background-color: rgba(0, 0, 0, 0.308);
     position: relative;
     top: 50px;
+    justify-content: center;
+    align-items: center;
+    display:flex;
+}
+
+@mixin logo{
+    width: 900px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    vertical-align: auto ;
+}
+
+@mixin logoSize {
+    width: 150px;
 }
 
 @mixin navButtons{
+    display: inline-block;
+    font-size: 16px;
+    font-weight: 600;   
+    height: 100%;
+    width: 680px;
+    position: relative; 
+    justify-content: flex-end;
+    display: flex;
+    align-items: center;
+}
 
+@mixin linkProp{
+    color:#fff;
+    text-decoration: none;
+    padding-left: 50px;
 }
